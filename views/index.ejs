@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <a href="/users">users</a>
+    <a href="/foo">foo</a>
+    <div style="width:600px" class="wmfg_layout_0">
+
+      <form method="post" action="/users">
+
+      <ul class="wmfg_questions">
+
+        <li class="wmfg_q">
+          <label class="wmfg_label" for="text_id">Name</label>
+          <input type="text" class="wmfg_text" name="text_name" id="text_id" value="" />
+        </li>
+
+        <li class="wmfg_q">
+          <label class="wmfg_label" for="select_id">Wohnort</label>
+          <select class="wmfg_select" name="select_name" id="select_id">
+            <option value="Wien">Wien</option>
+            <option value="Salzburg">Salzburg</option>
+            <option value="Innsbruck">Innsbruck</option>
+          </select>
+        </li>
+
+        <li class="wmfg_q">
+          <label class="wmfg_label">Geschlecht</label>
+          <table class="wmfg_answers">
+            <tr class="wmfg_a">
+              <td class="wmfg_a_td"><input type="radio" class="wmfg_radio" name="maennlich" value="maennlich" /></td>
+              <td><label class="wmfg_label_a" for="radio_1">Männlich</label></td>
+            </tr>
+            <tr class="wmfg_a">
+              <td class="wmfg_a_td"><input type="radio" class="wmfg_radio" name="weiblich" value="weiblich" /></td>
+              <td><label class="wmfg_label_a" for="radio_2">Weiblich</label></td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="wmfg_q">
+          <label class="wmfg_label">Hobbies</label>
+          <table class="wmfg_answers">
+            <tr class="wmfg_a">
+              <td class="wmfg_a_td"><input type="checkbox" class="wmfg_checkbox" name="tennis" id="checkbox_1" value="tennis" /></td>
+              <td><label class="wmfg_label_a" for="checkbox_1">Tennis</label></td>
+            </tr>
+            <tr class="wmfg_a">
+              <td class="wmfg_a_td"><input type="checkbox" class="wmfg_checkbox" name="fussball" id="checkbox_2" value="fussball" /></td>
+              <td><label class="wmfg_label_a" for="checkbox_2">Fussball</label></td>
+            </tr>
+            <tr class="wmfg_a">
+              <td class="wmfg_a_td"><input type="checkbox" class="wmfg_checkbox" name="golf" id="checkbox_3" value="golf" /></td>
+              <td><label class="wmfg_label_a" for="checkbox_3">Golf</label></td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="wmfg_q">
+          <input type="submit" class="wmfg_btn" name="submit_name" id="submit_id" value="Senden" />
+        </li>
+
+      </ul>
+
+      </form>
+
+    </div>
+  </body>
+</html>
