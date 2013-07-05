@@ -7,5 +7,5 @@ var server = require('./server'),
     http = require('http');
 
 module.exports = httpServer = http.createServer(server).listen(server.get('port'), function(){
-  console.log("Express server listening on port " + server.get('port'));
+  console.log("Express server listening on port " + server.get('port')+ ' and running in '+process.env.NODE_ENV+ ' mode ' );
 });
